@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
-      <hr />
+      <hr className='dark:border-gray-700' />
       <div class="text-center mt-6">
         <div>
           <a class="flex-none text-xl font-semibold text-black dark:text-white" href="#" aria-label="Brand">Junior Souza</a>

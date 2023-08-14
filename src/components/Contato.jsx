@@ -1,9 +1,18 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 
 function Contato() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
+
   return (
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-10 mx-auto" id='contato'>
-      <div class="grid md:grid-cols-2 items-center gap-12">
+    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-10 mx-auto" id='contato'>
+      <div className="grid md:grid-cols-2 items-center gap-12">
         <div>
           <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white">
             Conecte-se Comigo
@@ -48,50 +57,56 @@ function Contato() {
           </div>
 
         </div>
-
-        <div class="relative">
-
-          <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 dark:border-gray-700">
-            <h2 class=" text-3xl font-semibold text-gray-800 dark:text-gray-200">
+        <div className="relative">
+          <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 dark:border-gray-700">
+            <h2 className=" text-3xl font-semibold text-gray-800 dark:text-gray-200">
               Deixe uma mensagem
             </h2>
-            <form>
-              <div class="mt-6 grid gap-4 lg:gap-6">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <div className="mt-6 grid gap-4 lg:gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                   <div>
-                    <label for="hs-firstname-hire-us-1" class="block text-sm text-gray-700 font-medium dark:text-white">Nome</label>
-                    <input type="text" name="hs-firstname-hire-us-1" id="hs-firstname-hire-us-1" class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" />
+                    <label for="firstName" class="block text-sm text-gray-700 font-medium dark:text-white">Nome</label>
+                    <input {...register("firstName", { required: 'Esqueceu seu nome? 🤔' })}
+                      type="text"
+                      name="firstName"
+                      id="firstName"
+                      className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-purple-500 focus:ring-purple-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                    />
+                    {errors.firstName && <span className='text-red-700 absolute'>{errors.firstName.message}</span>}
                   </div>
 
                   <div>
-                    <label for="hs-lastname-hire-us-1" class="block text-sm text-gray-700 font-medium dark:text-white">Sobrenome</label>
-                    <input type="text" name="hs-lastname-hire-us-1" id="hs-lastname-hire-us-1" class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" />
+                    <label for="lastName" className="block text-sm text-gray-700 font-medium dark:text-white">Sobrenome</label>
+                    <input {...register("lastName", { required: 'Ops, cadê o sobrenome?' })} type="text" name="lastName" id="lastName" className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" />
+                    {errors.lastName && <span className='text-red-700 absolute'>{errors.lastName.message}</span>}
                   </div>
                 </div>
 
                 <div>
-                  <label for="hs-work-email-hire-us-1" class="block text-sm text-gray-700 font-medium dark:text-white">Seu melhor Email</label>
-                  <input type="email" name="hs-work-email-hire-us-1" id="hs-work-email-hire-us-1" autocomplete="email" class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" />
+                  <label for="email" className="block text-sm text-gray-700 font-medium dark:text-white">Seu melhor Email</label>
+                  <input {...register("email", { required: 'Ops, email inválido. 🚫' })} type="email" name="email" id="email" autocomplete="email" className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" />
+                  {errors.email && <span className='text-red-700 absolute'>{errors.email.message}</span>}
                 </div>
 
                 <div>
-                  <label for="hs-about-hire-us-1" class="block text-sm text-gray-700 font-medium dark:text-white">Mensagem</label>
-                  <textarea id="hs-about-hire-us-1" name="hs-about-hire-us-1" rows="4" class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"></textarea>
+                  <label for="message" className="block text-sm text-gray-700 font-medium dark:text-white">Mensagem</label>
+                  <textarea {...register("message", { required: 'Vamos lá, solte as palavras!' })} id="message" name="message" rows="4" className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"></textarea>
+                  {errors.message && <span className='text-red-700 absolute'>{errors.message.message}</span>}
                 </div>
               </div>
-              <div class="mt-6 grid">
-                <button type="submit" class="inline-flex justify-center items-center gap-x-3 text-center bg-purple-600 hover:bg-purple-800 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800">Enviar</button>
+              <div className="mt-6 grid">
+                <button type="submit" className="inline-flex justify-center items-center gap-x-3 text-center bg-purple-600 hover:bg-purple-800 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800">Enviar</button>
               </div>
             </form>
 
-            <div class="mt-3 text-center">
-              <p class="text-sm text-gray-500">
+            <div className="mt-3 text-center">
+              <p className="text-sm text-gray-500">
                 Retornarei seu contato o mais breve possível.
               </p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

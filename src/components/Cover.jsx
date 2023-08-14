@@ -14,7 +14,7 @@ function Cover() {
   return (
     <div className="flex flex-row h-screen mx-auto overflow-hidden bg-gray-100 px-2 sm:px-6 lg:px-8  dark:bg-zinc-900" >
 
-      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-[85rem] pt-10 mx-auto px-4 sm:px-6 lg:px-8 border border-red-800">
 
         <div class="grid md:grid-cols-2 gap-4 md:gap-6 xl:gap-10 md:items-center justify-items-end ">
           <div>
@@ -40,10 +40,10 @@ function Cover() {
               <span class="text-xs font-medium text-gray-800 uppercase dark:text-gray-200">Este site foi desenvolvido com:</span>
 
               <div class="mt-4 flex gap-x-8 justify-center sm:justify-normal">
-                <img class="w-14 h-auto" src={imgVite} alt="Vite" />
-                <img class="w-14 h-auto" src={imgJavascript} alt="Javascript" />
-                <img class="w-14 h-auto" src={imgReact} alt="React" />
-                <img class="w-14 h-auto" src={imgTailwind} alt="Tailwind" />
+                <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgVite} alt="Vite" />
+                <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgJavascript} alt="Javascript" />
+                <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgReact} alt="React" />
+                <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgTailwind} alt="Tailwind" />
               </div>
             </div>
 

@@ -12,10 +12,11 @@ function Projetos() {
         <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
           <div class="h-52 flex flex-col justify-center items-center bg-blue-600 rounded-t-xl">
           </div>
-          <div class="p-4 md:p-6">
-            <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-              React | NodeJS | MongoDB
-            </span>
+          <div class="p-2 md:p-4">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-blue-500 text-white">React</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-indigo-500 text-white">Vue.JS</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-purple-500 text-white">MongoDB</span>
+
             <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
               PROJETO 1
             </h3>
@@ -35,10 +36,11 @@ function Projetos() {
         <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
           <div class="h-52 flex flex-col justify-center items-center bg-rose-500 rounded-t-xl">
           </div>
-          <div class="p-4 md:p-6">
-            <span class="block mb-1 text-xs font-semibold uppercase text-rose-600 dark:text-rose-500">
-              React | Vue.js | MySql
-            </span>
+          <div class="p-2 md:p-4">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-red-500 text-white">React</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-yellow-500 text-white">Vue.JS</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-green-500 text-white">MySQL</span>
+
             <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
               PROJETO 2
             </h3>
@@ -58,10 +60,12 @@ function Projetos() {
         <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
           <div class="h-52 flex flex-col justify-center items-center bg-amber-500 rounded-t-xl">
           </div>
-          <div class="p-4 md:p-6">
-            <span class="block mb-1 text-xs font-semibold uppercase text-amber-500">
-              HTML5 | CSS3 | JavaScript | Bootstrap
-            </span>
+          <div class="p-2 md:p-4">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-blue-500 text-white">HTML5</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-indigo-500 text-white">CSS</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-purple-500 text-white">JavaScript</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-red-500 text-white">Bootstrap</span>
+
             <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
               PROJETO 3
             </h3>

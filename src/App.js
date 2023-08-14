@@ -15,9 +15,9 @@ function App() {
       <Cover />
       <Sobre />
       <Projetos />
-      <hr />
+      <hr className='dark:border-gray-700' />
       <Skills />
-      <hr />
+      <hr className='dark:border-gray-700' />
       <Contato />
       <Footer />
       </Fade>

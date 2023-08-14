@@ -4,8 +4,8 @@ import Themeswitcher from './Themeswitcher';
 
 function Header() {
   return (
-    <header class="flex flex-wrap md:justify-start md:flex-col z-50 w-full text-sm pb-4">
-      <div className='flex container max-w-screen-xl px-3 mt-2 mb-2 mr-auto ml-auto justify-between'>
+    <header class="sticky top-0 flex  flex-wrap md:flex-nowrap md:justify-start md:flex-col z-50 w-full text-sm pb-4 bg-white h-20 border border-gray-200 dark:bg-green-800 dark:border-gray-700">
+      <div className='flex container max-w-screen-xl px-3 mt-2 mb-2 mr-auto ml-auto justify-between '>
         <div className='hidden md:flex items-center'>
           <a class="mr-2 block hs-dark-mode group flex items-center text-gray-700 hover:text-purple-800 font-medium dark:text-white dark:hover:text-blue-500" href="#" target='_blank'>
             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +125,7 @@ function Header() {
           <Themeswitcher />
         </div>
       </div>
-      <nav class=" relative max-w-screen-xl w-full bg-white border border-gray-200 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700" aria-label="Global">
+      <nav class="max-w-screen-xl w-full bg-white border border-gray-200 rounded-[36px] mx-auto py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700" aria-label="Global">
         <div class="flex items-center justify-between">
           <a className="flex items-center" href="#" aria-label="Junior Souza">
             <svg className='w-10 h-10 mr-2 text-purple-800 dark:text-white' viewBox="0 0 256 289" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
