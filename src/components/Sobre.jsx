@@ -1,108 +1,135 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import GlobalContext from '../context/GloblalContext';
+import darkteste from '../img/darkteste.png';
+import iconDiploma from '../img/svg/diploma.svg';
+import teste from '../img/teste.png';
 
 function Sobre() {
-  return (
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      <div class="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
-        <div class="hidden md:block mb-24 md:mb-0 sm:px-6">
-          <div class="relative">
-            <img class="rounded-xl" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=500&h=600&q=80" alt="Image Description" />
 
-            <div class="absolute bottom-0 left-0 -z-[1] translate-y-10 -translate-x-14">
-              <svg class="max-w-[10rem] h-auto text-slate-400 dark:text-slate-700" width="696" height="653" viewBox="0 0 696 653" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="72.5" cy="29.5" r="29.5" fill="currentColor" />
-                <circle cx="171.5" cy="29.5" r="29.5" fill="currentColor" />
-                <circle cx="270.5" cy="29.5" r="29.5" fill="currentColor" />
-                <circle cx="369.5" cy="29.5" r="29.5" fill="currentColor" />
-                <circle cx="468.5" cy="29.5" r="29.5" fill="currentColor" />
-                <circle cx="567.5" cy="29.5" r="29.5" fill="currentColor" />
-                <circle cx="666.5" cy="29.5" r="29.5" fill="currentColor" />
-                <circle cx="29.5" cy="128.5" r="29.5" fill="currentColor" />
-                <circle cx="128.5" cy="128.5" r="29.5" fill="currentColor" />
-                <circle cx="227.5" cy="128.5" r="29.5" fill="currentColor" />
-                <circle cx="326.5" cy="128.5" r="29.5" fill="currentColor" />
-                <circle cx="425.5" cy="128.5" r="29.5" fill="currentColor" />
-                <circle cx="524.5" cy="128.5" r="29.5" fill="currentColor" />
-                <circle cx="623.5" cy="128.5" r="29.5" fill="currentColor" />
-                <circle cx="72.5" cy="227.5" r="29.5" fill="currentColor" />
-                <circle cx="171.5" cy="227.5" r="29.5" fill="currentColor" />
-                <circle cx="270.5" cy="227.5" r="29.5" fill="currentColor" />
-                <circle cx="369.5" cy="227.5" r="29.5" fill="currentColor" />
-                <circle cx="468.5" cy="227.5" r="29.5" fill="currentColor" />
-                <circle cx="567.5" cy="227.5" r="29.5" fill="currentColor" />
-                <circle cx="666.5" cy="227.5" r="29.5" fill="currentColor" />
-                <circle cx="29.5" cy="326.5" r="29.5" fill="currentColor" />
-                <circle cx="128.5" cy="326.5" r="29.5" fill="currentColor" />
-                <circle cx="227.5" cy="326.5" r="29.5" fill="currentColor" />
-                <circle cx="326.5" cy="326.5" r="29.5" fill="currentColor" />
-                <circle cx="425.5" cy="326.5" r="29.5" fill="currentColor" />
-                <circle cx="524.5" cy="326.5" r="29.5" fill="currentColor" />
-                <circle cx="623.5" cy="326.5" r="29.5" fill="currentColor" />
-                <circle cx="72.5" cy="425.5" r="29.5" fill="currentColor" />
-                <circle cx="171.5" cy="425.5" r="29.5" fill="currentColor" />
-                <circle cx="270.5" cy="425.5" r="29.5" fill="currentColor" />
-                <circle cx="369.5" cy="425.5" r="29.5" fill="currentColor" />
-                <circle cx="468.5" cy="425.5" r="29.5" fill="currentColor" />
-                <circle cx="567.5" cy="425.5" r="29.5" fill="currentColor" />
-                <circle cx="666.5" cy="425.5" r="29.5" fill="currentColor" />
-                <circle cx="29.5" cy="524.5" r="29.5" fill="currentColor" />
-                <circle cx="128.5" cy="524.5" r="29.5" fill="currentColor" />
-                <circle cx="227.5" cy="524.5" r="29.5" fill="currentColor" />
-                <circle cx="326.5" cy="524.5" r="29.5" fill="currentColor" />
-                <circle cx="425.5" cy="524.5" r="29.5" fill="currentColor" />
-                <circle cx="524.5" cy="524.5" r="29.5" fill="currentColor" />
-                <circle cx="623.5" cy="524.5" r="29.5" fill="currentColor" />
-                <circle cx="72.5" cy="623.5" r="29.5" fill="currentColor" />
-                <circle cx="171.5" cy="623.5" r="29.5" fill="currentColor" />
-                <circle cx="270.5" cy="623.5" r="29.5" fill="currentColor" />
-                <circle cx="369.5" cy="623.5" r="29.5" fill="currentColor" />
-                <circle cx="468.5" cy="623.5" r="29.5" fill="currentColor" />
-                <circle cx="567.5" cy="623.5" r="29.5" fill="currentColor" />
-                <circle cx="666.5" cy="623.5" r="29.5" fill="currentColor" />
-              </svg>
+  const theme = useContext(GlobalContext);
+  console.log(theme, 'teste de context api 😁');
+
+  return (
+    <>
+      <div class="relative">
+        <div class="max-w-[85rem] px-4 pt-10 sm:px-6 lg:px-8 lg:pt-14 mx-auto">
+          <div class="lg:grid lg:grid-cols-6 lg:gap-8">
+            <div class="hidden lg:block lg:col-span-2" onClick={() => { theme.toggleTheme(); }}>
+              {theme.theme === 'dark' ? <img className="rounded-xl" src={darkteste} alt="Junior" /> : <img className="rounded-xl" src={teste} alt="Junior" />}
             </div>
+
+
+            <div class="lg:col-span-4" id='sobre'>
+
+              <blockquote>
+                <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white"> Sobre mim</h2>
+
+                <p class=" text-xl font-medium text-gray-800 lg:leading-normal dark:text-gray-200">
+                  Minha primeira aventura na web foi lá em 2011. Depois de explorar várias trilhas profissionais, voltei para a área que sempre curti. Agora, estou atrás de uma oportunidade no mercado pra colocar em prática os novos conhecimentos que ganhei nessa minha jornada de desenvolvimento full stack.<br /> <br />
+                  Atualmente, estou focado em aprofundar meu conhecimento no módulo de backend na Trybe, com a ambição de aplicar essa expertise em projetos concretos que ampliem meu repertório e desafiem meus limites. A cada passo, mantenho meu compromisso de me desenvolver como profissional e abraçar a evolução constante no mundo do desenvolvimento.
+                </p>
+
+                <footer class="mt-6">
+                  <div class="flex items-center">
+                    <div class="lg:hidden flex-shrink-0">
+                      <img class="h-12 w-12 rounded-full" src={darkteste} alt="Junior" />
+                      <img class="h-12 w-12 rounded-full" src={teste} alt="Junior" />
+                    </div>
+                    <div class="ml-4 lg:ml-0">
+                      <p class="font-medium text-gray-800 dark:text-gray-200">
+                        Junior Souza
+                      </p>
+                      <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Desenvolvedor Full Stack
+                      </p>
+                    </div>
+                  </div>
+                </footer>
+              </blockquote>
+
+            </div>
+
           </div>
         </div>
-
-        <div>
-          <blockquote class="relative">
-            <svg class="absolute top-0 left-0 transform -translate-x-8 -translate-y-4 h-24 w-24 text-gray-200 dark:text-gray-700" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z" fill="currentColor" />
-            </svg>
-
-            <div class="relative z-10">
-              <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase mb-3 dark:text-gray-200">
-                Featured client
-              </p>
-
-              <p class="text-xl font-medium italic text-gray-800 md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal dark:text-gray-200">
-                To say that switching to Preline has been life-changing is an understatement. My business has tripled and I got my life back.
-              </p>
-            </div>
-
-            <footer class="mt-6">
-              <div class="flex items-center">
-                <div class="md:hidden flex-shrink-0">
-                  <img class="h-12 w-12 rounded-full" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description" />
-                </div>
-                <div class="ml-4 md:ml-0">
-                  <div class="text-base font-semibold text-gray-800 dark:text-gray-200">Nicole Grazioso</div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400">Director Payments & Risk | Airbnb</div>
-                </div>
-              </div>
-            </footer>
-
-            <div class="mt-8 lg:mt-14">
-              <a class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-gray-800 text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 transition-all text-sm lg:p-4 dark:focus-visible:ring-offset-gray-800" href="#">
-                Read the story
-              </a>
-            </div>
-          </blockquote>
-        </div>
       </div>
-    </div>
 
-  )
+      <div class="max-w-[85rem] px-4 py-14 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div aria-hidden="true" class="flex absolute left-0 -z-[1]">
+          <div class="bg-purple-800 opacity-20 blur-3xl w-[98vw] h-[320px] dark:bg-violet-500 dark:opacity-10"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="lg:w-3/4">
+            <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
+              Evolução Tecnológica: Atualização Constante
+            </h2>
+            <p class="mt-3 text-gray-800 dark:text-gray-400">
+              Ao longo dessa jornada, enfrentei uma variedade de desafios. A constante evolução da tecnologia exigiu que me mantivesse em constante atualização. Navegar por esse cenário em rápida transformação foi um teste de perseverança e dedicação.
+            </p>
+            <p class="mt-5 inline-flex items-center gap-x-2 font-medium text-purple-600 dark:text-purple-500">
+              Conquistas na Evolução Tecnológica
+              <svg class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z" fill="currentColor" />
+              </svg>
+            </p>
+          </div>
+
+
+          <div class="space-y-4 lg:space-y-6">
+
+            <div class="flex">
+
+              <span class=" mt-2 flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[38px] border border-gray-200 text-gray-800 shadow-sm mx-auto dark:bg-slate-900 dark:border-gray-700 dark:text-gray-200">
+                <img src={iconDiploma} alt="icon" />
+              </span>
+              <div class="ml-5 sm:ml-8">
+                <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                  Desenvolvimento Web Full Stack - Trybe (Cursando)
+                </h3>
+                <p class="mt-1 text-gray-600 dark:text-gray-400">
+                  Uma formação completa em Desenvolvimento Web que te prepara e conecta com o mercado de trabalho em um período de 12 meses.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex">
+
+              <span class=" mt-2 flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[38px] border border-gray-200 text-gray-800 shadow-sm mx-auto dark:bg-slate-900 dark:border-gray-700 dark:text-gray-200">
+                <img src={iconDiploma} alt="icon" />
+              </span>
+              <div class="ml-5 sm:ml-8">
+                <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                  Curso Design Gráfico - Alfamídia Educação Profissional, 2013
+                </h3>
+                <p class="mt-1 text-gray-600 dark:text-gray-400">
+                  Formação focada no domínio das ferramentas como Illustrator, Photoshop, InDesign e nas técnicas para criar logotipos, folders e peças criativas.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex">
+
+              <span class=" mt-2 flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[38px] border border-gray-200 text-gray-800 shadow-sm mx-auto dark:bg-slate-900 dark:border-gray-700 dark:text-gray-200">
+                <img src={iconDiploma} alt="icon" />
+              </span>
+              <div class="ml-5 sm:ml-8">
+                <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                  Técnico em Informática - Escola Alcides Maya, 2012
+                </h3>
+                <p class="mt-1 text-gray-600 dark:text-gray-400">
+                  A Alcides Maya é uma instituição com uma proposta pedagógica inovadora, referência pela qualidade de ensino na área da tecnologia da informação.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </>
+
+  );
 }
 
-export default Sobre
+export default Sobre;
