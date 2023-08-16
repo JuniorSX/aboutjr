@@ -18,7 +18,7 @@
     "react-awesome-reveal": "^4.2.5",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.4",
-    "react-just-parallax": "^3.1.16",
+    "react-parallax-tilt": "^1.7.158",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },

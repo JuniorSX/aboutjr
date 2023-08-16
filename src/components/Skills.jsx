@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Tilt from 'react-parallax-tilt';
 import imgCss from '../img/svg/css.svg';
 import imgDocker from '../img/svg/docker.svg';
 import imgGithub from '../img/svg/github2.svg';
@@ -18,6 +19,7 @@ import imgVue from '../img/svg/vue.svg';
 
 
 function Skills() {
+  const [scale, setScale] = useState(1.7);
   return (
     <>
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto" id='skills'>
@@ -30,144 +32,176 @@ function Skills() {
         <div class="grid grid-cols-3 [&>*:last-child]:justify-center sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 items-center gap-6">
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgHtml} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgHtml} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">HTML5</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgCss} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgCss} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">CSS3</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgReact} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgReact} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">React</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgJavascript} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgJavascript} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">JavaScript</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgTypescript} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgTypescript} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">TypeScript</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgVue} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgVue} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Vue.JS</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgRedux} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgRedux} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Redux</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgNode} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgNode} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Node</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgJest} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgJest} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Jest</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgMySql} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgMySql} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">MySQL</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgGithub} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgGithub} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">GitHub</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgDocker} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgDocker} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Docker</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgIllustrator} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgIllustrator} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Illustrator</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgPhotoshop} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgPhotoshop} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">PhotoShop</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgTailwind} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgTailwind} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Tailwind</h3>
             </div>
           </div>
 
           <div class="text-center">
-            <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
-              <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgVite} alt="React" />
-            </div>
+            <Tilt scale={scale} transitionSpeed={1300}>
+              <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">
+                <img class="w-14 h-auto" src={imgVite} alt="React" />
+              </div>
+            </Tilt>
             <div class="mt-3">
               <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Vite</h3>
             </div>

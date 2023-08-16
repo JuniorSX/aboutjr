@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { MouseParallax, ScrollParallax } from 'react-just-parallax';
-import blob from '../img/blob.svg';
-import imgPerfil from '../img/perfil-capa.png';
+import Tilt from 'react-parallax-tilt';
+import imgPerfil from '../img/perfil-capa-3.png';
 import imgJavascript from '../img/svg/javascript.svg';
 import imgReact from '../img/svg/react.svg';
 import imgTailwind from '../img/svg/tailwind.svg';
 import imgVite from '../img/svg/vite.svg';
 
 function Cover() {
-
+  const [scale, setScale] = useState(1.8);
 
   return (
     <div className="flex flex-row py-8 md:py-0 md:h-[92vh] mx-auto overflow-hidden bg-gray-100 px-2 sm:px-6 lg:px-8  dark:bg-[#00000065]" >
@@ -38,24 +37,24 @@ function Cover() {
             <div class="mt-6 lg:mt-12">
               <span class="text-xs font-medium text-gray-800 uppercase dark:text-gray-200">Este site foi desenvolvido com:</span>
               <div class="mt-4 flex gap-x-8 justify-center sm:justify-normal">
-                <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgVite} alt="Vite" />
-                <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgJavascript} alt="Javascript" />
-                <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgReact} alt="React" />
-                <img class="w-14 h-auto transition ease-in-out hover:scale-150" src={imgTailwind} alt="Tailwind" />
+                <Tilt scale={scale} transitionSpeed={2000}>
+                  <img class="w-14 h-auto" src={imgVite} alt="Vite" />
+                </Tilt>
+                <Tilt scale={scale} transitionSpeed={2000}>
+                  <img class="w-14 h-auto" src={imgJavascript} alt="Javascript" />
+                </Tilt>
+                <Tilt scale={scale} transitionSpeed={2000}>
+                  <img class="w-14 h-auto " src={imgReact} alt="React" />
+                </Tilt>
+                <Tilt scale={scale} transitionSpeed={2000}>
+                  <img class="w-14 h-auto " src={imgTailwind} alt="Tailwind" />
+                </Tilt>
               </div>
             </div>
           </div>
-          <div class="relative w-fit h-[87vh] border border-orange-700 hidden md:block">
-            <ScrollParallax enableOnTouchDevice isAbsolutelyPositioned>
-              <img src={blob} alt="tech 1" />
-            </ScrollParallax>
-            <img className='relative z-30' src={imgPerfil} alt="Jr" />
-            <MouseParallax enableOnTouchDevice isAbsolutelyPositioned >
-              <img className="-left-80" src={blob} alt="tech 2" />
-            </MouseParallax>
-
+          <div class="w-fit h-[88vh] hidden md:flex md:items-end ">
+            <img className='z-30 bottom-0 right-0 ' src={imgPerfil} alt="Jr" />
           </div>
-
         </div>
 
       </div>
