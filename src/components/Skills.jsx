@@ -213,7 +213,7 @@ function Skills() {
         <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Principais Competências Interpessoais</h2>
         <p class="mt-1 text-gray-600 dark:text-gray-400">Minhas Habilidades Sociais além do código</p>
       </div>
-      <div class="max-w-4xl mx-auto">
+      <div class="max-w-4xl mx-auto px-4">
 
         <div class="grid md:grid-cols-2 gap-6 lg:gap-12">
           <div class="space-y-6 lg:space-y-10">
