@@ -32,8 +32,7 @@ function Sobre() {
                 <footer class="mt-6">
                   <div class="flex items-center">
                     <div class="lg:hidden flex-shrink-0">
-                      <img class="h-12 w-12 rounded-full" src={darkteste} alt="Junior" />
-                      <img class="h-12 w-12 rounded-full" src={teste} alt="Junior" />
+                      {theme.theme === 'dark' ? <img class="h-12 w-12 rounded-full" src={darkteste} alt="Junior" /> : <img class="h-12 w-12 rounded-full" src={teste} alt="Junior" />}
                     </div>
                     <div class="ml-4 lg:ml-0">
                       <p class="font-medium text-gray-800 dark:text-gray-200">
