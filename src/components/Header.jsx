@@ -152,8 +152,8 @@ function Header() {
         <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
           <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
             <AnchorLink offset='140' className="font-semibold text-gray-500 hover:text-purple-700 md:py-6 dark:text-gray-400 dark:hover:text-gray-200" href="#sobre" aria-current="page">Sobre mim</AnchorLink>
-            <AnchorLink offset='140' className="font-semibold text-gray-500 hover:text-purple-700 md:py-6 dark:text-gray-400 dark:hover:text-gray-200" href="#skills">Skills</AnchorLink>
-            <AnchorLink offset='100' className="font-semibold text-gray-500 hover:text-purple-700 md:py-6 dark:text-gray-400 dark:hover:text-gray-200" href="#projetos">Projetos</AnchorLink>
+            <AnchorLink offset='80' className="font-semibold text-gray-500 hover:text-purple-700 md:py-6 dark:text-gray-400 dark:hover:text-gray-200" href="#skills">Skills</AnchorLink>
+            <AnchorLink offset='80' className="font-semibold text-gray-500 hover:text-purple-700 md:py-6 dark:text-gray-400 dark:hover:text-gray-200" href="#projetos">Projetos</AnchorLink>
             <AnchorLink offset='100' className="font-semibold text-gray-500 hover:text-purple-700 md:py-6 dark:text-gray-400 dark:hover:text-gray-200" href="#contato">Contato</AnchorLink>
           </div>
         </div>
