@@ -27,7 +27,7 @@ function Skills() {
           <p class="mt-1 text-gray-600 dark:text-gray-400">Trazendo Valor por Meio de Habilidades Técnicas Versáteis</p>
         </div>
 
-        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 items-center gap-6">
+        <div class="grid grid-cols-3 [&>*:last-child]:justify-center sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 items-center gap-6">
 
           <div class="text-center">
             <div class="flex justify-center items-center w-12 h-12 rounded-full mx-auto">

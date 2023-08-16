@@ -9,6 +9,7 @@ function Projetos() {
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
         <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
           <div class="h-52 flex flex-col justify-center items-center bg-blue-600 rounded-t-xl">
           </div>
@@ -24,6 +25,7 @@ function Projetos() {
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.
             </p>
           </div>
+
           <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
             <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" href="#soon">
               Repositório
@@ -33,6 +35,7 @@ function Projetos() {
             </a>
           </div>
         </div>
+
         <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
           <div class="h-52 flex flex-col justify-center items-center bg-rose-500 rounded-t-xl">
           </div>
@@ -57,6 +60,7 @@ function Projetos() {
             </a>
           </div>
         </div>
+
         <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
           <div class="h-52 flex flex-col justify-center items-center bg-amber-500 rounded-t-xl">
           </div>
@@ -82,6 +86,84 @@ function Projetos() {
             </a>
           </div>
         </div>
+
+        <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+          <div class="h-52 flex flex-col justify-center items-center bg-rose-500 rounded-t-xl">
+          </div>
+          <div class="p-2 md:p-4">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-red-500 text-white">React</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-yellow-500 text-white">Vue.JS</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-green-500 text-white">MySQL</span>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
+              PROJETO 2
+            </h3>
+            <p class="mt-3 text-gray-500">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+            </p>
+          </div>
+          <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+            <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" href="#soon">
+              Repositório
+            </a>
+            <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" href="#soon">
+              Visualizar Projeto
+            </a>
+          </div>
+        </div>
+
+        <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+          <div class="h-52 flex flex-col justify-center items-center bg-amber-500 rounded-t-xl">
+          </div>
+          <div class="p-2 md:p-4">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-blue-500 text-white">HTML5</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-indigo-500 text-white">CSS</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-purple-500 text-white">JavaScript</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-red-500 text-white">Bootstrap</span>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
+              PROJETO 3
+            </h3>
+            <p class="mt-3 text-gray-500">
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+            </p>
+          </div>
+          <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+            <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" href="#soon">
+              Repositório
+            </a>
+            <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" href="#soon">
+              Visualizar Projeto
+            </a>
+          </div>
+        </div>
+
+        <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+          <div class="h-52 flex flex-col justify-center items-center bg-blue-600 rounded-t-xl">
+          </div>
+          <div class="p-2 md:p-4">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-blue-500 text-white">React</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-indigo-500 text-white">Vue.JS</span>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-purple-500 text-white">MongoDB</span>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
+              PROJETO 1
+            </h3>
+            <p class="mt-3 text-gray-500">
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.
+            </p>
+          </div>
+
+          <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+            <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-bl-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" href="#soon">
+              Repositório
+            </a>
+            <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-br-xl font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm sm:p-4 dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" href="#soon">
+              Visualizar Projeto
+            </a>
+          </div>
+        </div>
+
       </div>
     </div >
   );

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-
+import React, { useState } from 'react';
+import { Fade } from "react-awesome-reveal";
 import Contato from './components/Contato';
 import Cover from './components/Cover';
 import Footer from './components/Footer';
@@ -18,7 +18,7 @@ function App() {
   return (
     <GlobalContext.Provider value={{theme: themeColor, toggleTheme}}>
       <Header />
- 
+      <Fade duration={1100}>
       <Cover />
       <Sobre />
       <hr className='dark:border-gray-700' />
@@ -27,7 +27,7 @@ function App() {
       <Projetos />
       <Contato />
       <Footer />
-
+      </Fade>
     </GlobalContext.Provider>
   );
 }
