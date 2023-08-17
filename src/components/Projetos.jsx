@@ -22,7 +22,7 @@ function Projetos() {
               PROJETO 1
             </h3>
             <p class="mt-3 text-gray-500">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.
+              Este é um espaço temporário para o futuro "Projeto 1". Em breve, ele será atualizado com uma proposta única e emocionante, trazendo inovação e criatividade.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ function Projetos() {
               PROJETO 2
             </h3>
             <p class="mt-3 text-gray-500">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+              Este espaço logo estará repleto de detalhes sobre uma iniciativa que promete revolucionar o cenário com suas ideias inovadoras.
             </p>
           </div>
           <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
@@ -73,8 +73,8 @@ function Projetos() {
             <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
               PROJETO 3
             </h3>
-            <p class="mt-3 text-gray-500">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+            <p class="mt-3 text-gray-500">Ut
+              Aguarde ansiosamente pela revelação de uma proposta empolgante que em breve ocupará este lugar com brilho e criatividade.
             </p>
           </div>
           <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
@@ -96,10 +96,10 @@ function Projetos() {
             <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-green-500 text-white">MySQL</span>
 
             <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
-              PROJETO 2
+              PROJETO 4
             </h3>
             <p class="mt-3 text-gray-500">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+              Prepare-se para testemunhar a emergência de uma proposta emocionante que promete superar desafios e inspirar mentes criativas.
             </p>
           </div>
           <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
@@ -122,10 +122,10 @@ function Projetos() {
             <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-red-500 text-white">Bootstrap</span>
 
             <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
-              PROJETO 3
+              PROJETO 5
             </h3>
             <p class="mt-3 text-gray-500">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+              Em breve, você conhecerá detalhes empolgantes sobre uma inovação que está prestes a se tornar a estrela da cena tecnológica.
             </p>
           </div>
           <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
@@ -147,10 +147,10 @@ function Projetos() {
             <span class="inline-flex items-center gap-1.5 py-1.5 px-3 mr-2 mb-3 rounded-full text-xs font-medium bg-purple-500 text-white">MongoDB</span>
 
             <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
-              PROJETO 1
+              PROJETO 6
             </h3>
             <p class="mt-3 text-gray-500">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.
+              Prepare-se para a revelação de um projeto excepcional que está a caminho, pronto para surpreender e cativar.
             </p>
           </div>
 

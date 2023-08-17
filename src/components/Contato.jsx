@@ -1,14 +1,52 @@
-import React from 'react';
+import emailjs from '@emailjs/browser';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert2';
 
 function Contato() {
+  const [nome, setNome] = useState('');
+  const [sobreNome, setSobreNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [mensagem, setMensagem] = useState('');
+
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  function sendEmail(e) {
+
+    const templateParams = {
+      from_name: nome,
+      sobreNome: sobreNome,
+      email: email,
+      message: mensagem
+    };
+    emailjs.send('service_u4w51z9', 'template_nhqv1ln', templateParams, 'XDotBK3DoiGaLoQBn')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        Swal.fire({
+          icon: 'success',
+          title: 'Seu email foi enviado! 😊',
+          showConfirmButton: false,
+          timer: 1500
+        });
+        setNome('');
+        setSobreNome('');
+        setEmail('');
+        setMensagem('');
+      }, (err) => {
+        console.log('FAILED...', err);
+        Swal.fire({
+          icon: 'error',
+          title: 'Algo deu errado, tente novamente 😢',
+          showConfirmButton: false,
+          timer: 1500
+        });
+      });
+  }
 
   return (
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-10 mx-auto" id='contato'>
@@ -62,7 +100,7 @@ function Contato() {
             <h2 className=" text-3xl font-semibold text-gray-800 dark:text-gray-200">
               Deixe uma mensagem
             </h2>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(sendEmail)}>
               <div className="mt-6 grid gap-4 lg:gap-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                   <div>
@@ -71,6 +109,8 @@ function Contato() {
                       type="text"
                       name="firstName"
                       id="firstName"
+                      onChange={(e) => setNome(e.target.value)}
+                      value={nome}
                       className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-purple-500 focus:ring-purple-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
                     />
                     {errors.firstName && <span className='text-red-700 absolute'>{errors.firstName.message}</span>}
@@ -78,20 +118,42 @@ function Contato() {
 
                   <div>
                     <label for="lastName" className="block text-sm text-gray-700 font-medium dark:text-white">Sobrenome</label>
-                    <input {...register("lastName", { required: 'Ops, cadê o sobrenome?' })} type="text" name="lastName" id="lastName" className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" />
+                    <input {...register("lastName", { required: 'Ops, cadê o sobrenome?' })}
+                      type="text"
+                      name="lastName"
+                      id="lastName"
+                      className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                      onChange={(e) => setSobreNome(e.target.value)}
+                      value={sobreNome}
+                    />
                     {errors.lastName && <span className='text-red-700 absolute'>{errors.lastName.message}</span>}
                   </div>
                 </div>
 
                 <div>
                   <label for="email" className="block text-sm text-gray-700 font-medium dark:text-white">Seu melhor Email</label>
-                  <input {...register("email", { required: 'Ops, email inválido. 🚫' })} type="email" name="email" id="email" autocomplete="email" className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" />
+                  <input {...register("email", { required: 'Ops, email inválido. 🚫' })}
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="email"
+                    className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                  />
                   {errors.email && <span className='text-red-700 absolute'>{errors.email.message}</span>}
                 </div>
 
                 <div>
                   <label for="message" className="block text-sm text-gray-700 font-medium dark:text-white">Mensagem</label>
-                  <textarea {...register("message", { required: 'Vamos lá, solte as palavras!' })} id="message" name="message" rows="4" className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"></textarea>
+                  <textarea {...register("message", { required: 'Vamos lá, solte as palavras!' })}
+                    id="message"
+                    name="message"
+                    rows="4"
+                    className="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                    onChange={(e) => setMensagem(e.target.value)}
+                    value={mensagem}
+                  ></textarea>
                   {errors.message && <span className='text-red-700 absolute'>{errors.message.message}</span>}
                 </div>
               </div>

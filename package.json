@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -20,6 +21,7 @@
     "react-hook-form": "^7.45.4",
     "react-parallax-tilt": "^1.7.158",
     "react-scripts": "^5.0.1",
+    "sweetalert2": "^11.7.23",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
