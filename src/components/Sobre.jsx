@@ -82,7 +82,7 @@ function Sobre() {
               </span>
               <div class="ml-5 sm:ml-8">
                 <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  Desenvolvimento Web Full Stack - Trybe (Cursando)
+                  Desenvolvimento Web Full Stack - Trybe, 2023
                 </h3>
                 <p class="mt-1 text-gray-600 dark:text-gray-400">
                   Uma formação completa em Desenvolvimento Web que te prepara e conecta com o mercado de trabalho em um período de 12 meses.
